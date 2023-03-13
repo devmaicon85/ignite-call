@@ -1,12 +1,10 @@
 import { Avatar } from "@/src/components/Avatar";
-import { Box } from "@/src/components/Box";
 import { Heading } from "@/src/components/Heading";
 import { Text } from "@/src/components/Text";
 import { GetStaticPaths, GetStaticProps } from "next";
-import { useSession } from "next-auth/react";
 import { prisma } from "@/src/lib/prisma";
 import { Calendar } from "@/src/components/Calendar";
-import { ConfirmStep } from "./ConfirmStep";
+import { ConfirmStep } from "@/src/components/structures/ConfirmStep";
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { useRouter } from "next/router";

@@ -3,7 +3,7 @@ import { Text } from "../components/Text";
 
 import previewImage from "../assets/app-preview.png";
 import Image from "next/image";
-import { ClaimUsernameForm } from "../components/structure/ClaimUsernameForm";
+import { ClaimUsernameForm } from "../components/structures/ClaimUsernameForm";
 import { MultiStep } from "../components/MultiStep";
 import { NextSeo } from "next-seo";
 
