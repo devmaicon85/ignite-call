@@ -23,10 +23,10 @@ export default function Home() {
                 <header className="flex flex-col items-center">
                     <Logo className="" />
 
-                    <Heading size="lg" className="mt-4">
+                    <Heading className="mt-4 text-4xl">
                         Ignite Lab
                     </Heading>
-                    <Text size="lg" className="text-gray-400 mt-1">
+                    <Text className="text-gray-400 mt-1">
                         Faça login e comece a usar
                     </Text>
                 </header>
@@ -37,9 +37,9 @@ export default function Home() {
                 >
                     {isUserSignedIn && <Text>Login Realizado</Text>}
 
-                    <label htmlFor="email" className="flex flex-col gap-3">
-                        <Text className="font-semibold">
-                            Endereço de e-mail
+                    <label htmlFor="email" className="flex flex-col gap-1">
+                        <Text className="text-sm">
+                            Seu e-mail
                         </Text>
                         <TextInput.Root>
                             <TextInput.Icon>
@@ -52,8 +52,8 @@ export default function Home() {
                         </TextInput.Root>
                     </label>
 
-                    <label htmlFor="password" className="flex flex-col gap-3">
-                        <Text className="font-semibold">Sua senha</Text>
+                    <label htmlFor="password" className="flex flex-col gap-1">
+                        <Text className="text-sm">Sua senha</Text>
                         <TextInput.Root>
                             <TextInput.Icon>
                                 <Lock />
@@ -71,7 +71,7 @@ export default function Home() {
                         className="flex items-center gap-2"
                     >
                         <Checkbox id="remember" />
-                        <Text size="sm" className="text-gray-200">
+                        <Text className="text-gray-200">
                             Lembrar de mim por 30 dias
                         </Text>
                     </label>
